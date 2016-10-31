@@ -1,0 +1,128 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="csi.myapplication.controllers.applicationcontroller.MapDetails">
+
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="false"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentStart="false"
+            android:id="@+id/relativeLayout2"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="475dp">
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:id="@+id/makeCall"
+                    android:background="@drawable/directionlocation"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="22dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:onClick="moreDetails"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:id="@+id/textView5"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="75dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="  Get Directions"
+                    android:id="@+id/textView4"
+                    android:textColor="#ffffffff"
+                    android:textSize="20dp"
+                    android:layout_alignTop="@+id/makeCall"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="7dp" />
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:id="@+id/imageView9"
+
+                    android:background="@drawable/directions"
+                    android:layout_marginLeft="65dp"
+                    android:layout_marginTop="25dp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="430dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="46dp">
+
+                <fragment
+                    android:id="@+id/map"
+                    class="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="430dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"></fragment>
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Hospital Name"
+                    android:id="@+id/loadName"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:textSize="18dp"
+                    android:paddingLeft="58dp"
+                    android:paddingTop="10dp"
+                    android:autoText="false"
+                    android:background="#ffc4c3c0"
+                     />
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="32dp"
+                    android:id="@+id/imageView12"
+                    android:background="@drawable/locationimage"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginTop="7dp" />
+
+
+
+                </RelativeLayout>
+        </RelativeLayout>
+
+
+
+</RelativeLayout>
